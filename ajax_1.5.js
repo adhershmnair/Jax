@@ -328,18 +328,7 @@ function Jax()
 					break;
 					
 				case 'cs':	// call script
-					var scr = id + '(';
-					if(this.isArray(data)){
-						scr += '(data[0])';
-						for (var l=1; l<data.length; l++) {
-							scr += ',(data['+l+'])';
-						}
-					} else {
-						scr += 'data';
-					}
-					scr += ');';
-					eval(scr);
-					
+					setTimeout(id,1); 
 					break;
 				
 				default:
