@@ -1,0 +1,4 @@
+installation ( local server)
+
+1 move jax folder to htdocs or your project folder
+2 run the demo.html in browser( http://localhost/jax/demo.html)
