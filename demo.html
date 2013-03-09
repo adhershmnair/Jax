@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+<script language="javascript" src="http://code.jquery.com/jquery-1.9.1.js" ></script>
+<script language="javascript">
+ 
+	var jax_live_site = 'http://localhost/jax/Request.php';
+	var jax_site_type = '2.5';
+	var jax_token_var='123456'; 
+	
+</script>
+<script language="javascript" src="ajax_1.5.js" ></script>
+<script language="javascript">
+jQuery(documnet).ready(function(){
+	
+	
+	});
+</script>
+<style>
+a { text-decoration:none}
+</style>
+</head>
+
+<body>
+
+<div id="div1"></div>
+<div id="div2"></div>
+<div id="div3"></div>
+
+
+<div id="alltriggers">
+  <h1><a href="javascript:void(0)" onclick="jax.call('test','test,alertCall');">
+       Alert  response from server [ jax.call('test','test,alertCall'); ]
+       </a> </h1>
+  <h1>  <a href="javascript:void(0)" onclick="jax.call('test','test,emptyCall');">
+        Response without argument call [ jax.call('test','test,emptyCall'); ]</a> </h1>
+   <h1>   <a href="javascript:void(0)" onclick="jax.call('test','test,argumentCallSingle',1);">
+        Response with single argument [ jax.call('test','test,argumentCallSingle',1); ]</a> </h1>
+   <h1>     <a href="javascript:void(0)" onclick="jax.call('test','test,argumentCallMultiple',1,2);">
+        Response with multiple argument [ jax.call('test','test,argumentCallMultiple',1,2); ]</a></h1>
+</div>
+
+
+</body>
+</html>
