@@ -7,16 +7,16 @@ installation ( local server)
 Tutorial for beginnners
 //////////////////////////////
  
-	jax('<folder>','<filename>,<function>'); //client side calling
+jax('<folder>','<filename>,<function>'); //client side calling
 	 
-	eg: jax('test','test,alertCall');
+eg: jax('test','test,alertCall');
 	 
-	this call goes to "/response/test/test.php"
+this call goes to "/response/test/test.php"
 	 
-	in test.php must contain the class name as "ajaxText" and the function name as "alertCall"
+in test.php must contain the class name as "ajaxText" and the function name as "alertCall"
 	    
-    eg: 
-	  <?php
+eg: 
+	<?php
 		class ajaxTest
 		{
 
@@ -27,4 +27,4 @@ Tutorial for beginnners
 				 return $response->sendResponse();
 			 }
 	    }
-	  ?>
+	?>
