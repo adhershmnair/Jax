@@ -1,7 +1,10 @@
 <?php
+include('Define.php');
 include('Json.php');
 include('Response.php');
+include('Template.php');
 include('Ajax.php');
+
 
 //create ajax object
 $ajax = new Ajax();

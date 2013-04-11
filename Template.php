@@ -14,8 +14,8 @@ class Template {
 		if (file_exists($file)) {
 			extract($this->data);
 			
-      		ob_start();
-      
+      		ob_start(); 
+			
 	  		include($file);
       
 	  		$content = ob_get_contents();
