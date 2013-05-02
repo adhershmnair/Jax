@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
+<title>Syamvilakudy/Jax - Light weight fast ajax system using azrul-ajax</title>
 
 <script language="javascript" src="http://code.jquery.com/jquery-1.9.1.js" ></script>
 <script language="javascript">
@@ -29,18 +29,38 @@ a { text-decoration:none}
 <div id="div1"></div>
 <div id="div2"></div>
 <div id="div3"></div>
+<div id="div4"></div>
 
 
 <div id="alltriggers">
-  <h1><a href="javascript:void(0)" onclick="jax.call('test','test,alertCall');">
-       Alert  response from server [ jax.call('test','test,alertCall'); ]
-       </a> </h1>
-  <h1>  <a href="javascript:void(0)" onclick="jax.call('test','test,emptyCall');">
-        Response without argument call [ jax.call('test','test,emptyCall'); ]</a> </h1>
-   <h1>   <a href="javascript:void(0)" onclick="jax.call('test','test,argumentCallSingle',1);">
-        Response with single argument [ jax.call('test','test,argumentCallSingle',1); ]</a> </h1>
-   <h1>     <a href="javascript:void(0)" onclick="jax.call('test','test,argumentCallMultiple',1,2);">
-        Response with multiple argument [ jax.call('test','test,argumentCallMultiple',1,2); ]</a></h1>
+   <h1>
+       <a href="javascript:void(0)" onclick="jax.call('test','test,alertCall');">
+          Alert  response from server [ jax.call('test','test,alertCall'); ]
+       </a> 
+   </h1>
+   <h1>  
+       <a href="javascript:void(0)" onclick="jax.call('test','test,emptyCall');">
+          Response without argument call [ jax.call('test','test,emptyCall'); ]
+       </a> 
+   </h1>
+   
+   <h1>   
+       <a href="javascript:void(0)" onclick="jax.call('test','test,argumentCallSingle',1);">
+          Response with single argument [ jax.call('test','test,argumentCallSingle',1); ]
+       </a> 
+   </h1>
+   
+   <h1>     
+       <a href="javascript:void(0)" onclick="jax.call('test','test,argumentCallMultiple',1,2);">
+           Response with multiple argument [ jax.call('test','test,argumentCallMultiple',1,2); ]
+       </a>
+   </h1>
+        
+   <h1>     
+       <a href="javascript:void(0)" onclick="jax.call('test','test,outputFromTemplate');">
+           Response with multiple argument [ jax.call('test','test,outputFromTemplate');  ]
+       </a>
+   </h1>
 </div>
 
 

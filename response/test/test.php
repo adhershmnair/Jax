@@ -29,4 +29,15 @@ class ajaxTest
     return $response->sendResponse();
  }
  
+ function outputFromTemplate()
+ {
+	 $tmpl = new Template();
+	 $html = $tmpl->set('title','Hello World')
+	              ->set('description','This Content Is Fetch From A Template')
+				  ->fetch('helloworld.php');
+	$response = new JAXResponse; 
+    $response->addAssign('div3','innerHTML', $html);
+    return $response->sendResponse(); 
+ }
+ 
 }
