@@ -291,11 +291,10 @@ function Jax()
 			var property 	= result[i][2];
 			var data 		= result[i][3];
 
-			var objElement = this.$(id);
-			
 			switch(cmd){
 				case 'as': 	// assign or clear
-					
+				
+					var objElement = this.$(id);
 					if(objElement){
  
 							eval("objElement."+property+"=  data \; ");
