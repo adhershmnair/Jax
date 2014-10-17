@@ -297,20 +297,9 @@ function Jax()
 				case 'as': 	// assign or clear
 					
 					if(objElement){
-// 						data = data.replace(/"/g, "\\\"");
-// 						data = data.replace(/&#123;/g, "{");
-// 						data = data.replace(/&#125;/g, "}");
-						/*
-						 * BetterInnerHTML cannot be used since it
-						 * causes XML validation error
-						 */
-						//if(property == 'innerHTML'){
-						//	this.BetterInnerHTML(objElement, data);
-						//}
-						//else
-						//{
+ 
 							eval("objElement."+property+"=  data \; ");
-						//}
+						 
 					}
 					break;
 					
