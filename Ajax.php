@@ -151,10 +151,10 @@ class Ajax
 			$callArray	= explode(',', $func);
 
 			$viewController = strtolower($callArray[0]);
-			$viewControllerFile	= 'Response'.'/'.$option.'/'.$viewController . '.php';
+			$viewControllerFile	= 'response'.'/'.$option.'/'.$viewController . '.php';
 			if(file_exists( $viewControllerFile ) )
 			{	
-				require_once('Response'.'/'.$option.'/'.$viewController . '.php' );
+				require_once('response'.'/'.$option.'/'.$viewController . '.php' );
 				$viewController = ucfirst($viewController);
 				$viewController	= 'ajax'.$viewController;
 				$controller		 = new $viewController();

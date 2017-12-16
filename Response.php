@@ -138,7 +138,7 @@ class JAXResponse
 			header('Content-type: text/plain');
 		
 		if(!defined('SERVICES_JSON_SLICE'))
-			include_once('Json.php');
+			include_once(realpath(__DIR__).'/Json.php');
 		
 		$json = new Services_JSON();
 		
